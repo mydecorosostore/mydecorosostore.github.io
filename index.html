@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>Decoroso</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-  <a id="logo">Decoroso</a>
+  <a href="#" class="logo">
+    <img src="images/logo.svg" alt="Decoroso" width="70%" height="70%">
+  </a>
   <nav>
-    <a href="#home">Главная<div class="line"></div></a>
-    <a href="#products">Примеры работ<div class="line"></div></a>
-    <a href="#testimonials">Отзывы<div class="line"></div></a>
-    <a href="#contact">Связаться с нами<div class="line"></div></a>
+    <a href="#section-2">Наши работы</a>
+    <a>О нас</a>
+    <a>Избранное</a>
+    <a href="#section-3">Связаться с нами</a>
   </nav>
 </header>
-<section id="home">
-  <h1>Стиль и качество? Decoroso.</h1>
-  <p>Лучшие двери для вашего дома</p>
-  <a href="#products">Узнать больше</a>
-  <img src="main.jpg" alt="main"/>
-</section>
-<section id="products">
-  <h1>Мы гордимся своими работами</h1>
-  <div class="products-container">
-    <div class="product">
-      <h2>Дверь 1</h2>
-      <img src="product-1.png" alt="product-1"/>
+<main>
+  <h1>Decoroso - стиль и качество</h1>
+  <p>Лучшее решение для вашего дома</p>
+  <a href="#section-1">Узнать больше</a>
+</main>
+<section id="section-1">
+  <h1>Перегородка Николая Баскова</h1>
+  <div class="container-1">
+    <div class="container-2">
+      <p>Это уютная перегородка - работа наших мастеров, работа была сделана специально для заслуженного народного
+        артиста
+        Николая Баскова. Используются лучшие материалы и дерево, бла, бла, бла...</p>
       <button>Подробнее</button>
     </div>
-    <div class="product">
-      <h2>Дверь 2</h2>
-      <img src="product-2.png" alt="product-2"/>
-      <button>Подробнее</button>
-    </div>
-    <div class="product">
-      <h2>Дверь 3</h2>
-      <img src="product-3.png" alt="product-3"/>
-      <button>Подробнее</button>
+    <div class="container-3">
+      <img src="images/image4.png" alt="">
     </div>
   </div>
 </section>
-<section id="testimonials">
-  <h1>Отзывы наших клиентов</h1>
-  <div class="testimonials-container">
-    <div class="testimonial">
-      <div>😍</div>
-      <span>Клиент 1</span>
-      <p>Быстро. Качественно.</p>
+<section id="section-2">
+  <h1>Наши работы</h1>
+  <div class="container-1">
+    <div class="container-2">
+      <div class="item"><img src="images/image3.png"></div>
+      <div class="item"><img src="images/image4.png"></div>
     </div>
-    <div class="testimonial">
-      <div>😎</div>
-      <span>Клиент 2</span>
-      <p>Лучшие на рынке!</p>
+    <div class="container-3">
+      <div class="item"><img src="images/image5.png"></div>
+      <div class="item"><img src="images/image6.png"></div>
     </div>
-    <div class="testimonial">
-      <div>😀</div>
-      <span>Клиент 3</span>
-      <p>Был в шоке...</p>
+    <div class="container-4">
+      <div class="item"><img src="images/image7.png"></div>
+      <div class="item"><img src="images/image8.png"></div>
     </div>
   </div>
 </section>
-<section id="contact">
-  <div class="contact-container">
-    <h1>Выбирайте лучшее</h1>
-    <p>Оставьте заявку</p>
-    <form>
-      <div>
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-      </div>
+<section id="section-3">
+  <h1>Связаться с нами</h1>
+  <div class="container-1">
+    <div class="container-2">
+      <p>Вы почти у цели. Позвоните или оставьте заявку, мы свяжемся с Вами в ближайшее время.</p>
+      <a href="tel:+79999999999">+7 (999) 999-99-99</a>
       <input type="email" placeholder="Email">
-      <textarea placeholder="Сообщение"></textarea>
-    </form>
+      <input type="text" placeholder="Сообщение">
+      <button>Отправить</button>
+    </div>
+    <div class="container-3">
+      <img src="images/image9.png" alt="">
+    </div>
   </div>
-  <img src="contact.png">
 </section>
 <footer>
-  Decoroso 2021 &copy;All rights are reserved
+  <p>© Decoroso 2023. Все права защищены.</p>
 </footer>
 </body>
 </html>
