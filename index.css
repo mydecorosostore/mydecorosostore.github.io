@@ -131,6 +131,7 @@ main a {
 
 #section-1 .container-2, #section-1 .container-3 {
   width: 40%;
+  max-height: 300px;
 }
 
 #section-1 img {
@@ -143,6 +144,12 @@ main a {
 
 .fade {
   animation: fade 5s ease-in;
+}
+
+@-webkit-keyframes fade {
+  0% { opacity: 1 }
+  50% { opacity: 0 }
+  100% { opacity: 1 }
 }
 
 @keyframes fade {
