@@ -5,7 +5,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 1.png'
+    urls: ['images/Frame 1.png', 'images/Frame 1_1.png', 'images/Frame 1_2.png']
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 2.png'
+    urls: ['images/Frame 2.png', 'images/Frame 2_1.png', 'images/Frame 2_2.png']
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 3.png'
+    urls: ['images/Frame 3.png', 'images/Frame 3_1.png', 'images/Frame 3_2.png']
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 4.png'
+    urls: ['images/Frame 4.png', 'images/Frame 4_1.png', 'images/Frame 4_2.png']
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 5.png'
+    urls: ['images/Frame 5.png', 'images/Frame 5_1.png', 'images/Frame 5_2.png']
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const objects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nostrum voluptate! Earum,\n' +
       '        odio, saepe? Accusantium aliquam commodi consequuntur debitis doloremque expedita laboriosam magni ullam ut!\n' +
       '        Facilis in laboriosam quis ullam.',
-    url: 'images/Frame 6.png'
+    urls: ['images/Frame 6.png', 'images/Frame 6_1.png', 'images/Frame 6_2.png']
   },
 ]
 
@@ -61,9 +61,9 @@ window.onload = () => {
   const id = Number(usp.get('id'))
   const obj = objects[id - 1]
 
-  img1.src = obj.url
-  img2.src = obj.url
-  img3.src = obj.url
+  img1.src = obj.urls[0]
+  img2.src = obj.urls[1]
+  img3.src = obj.urls[2]
   h1.innerText = obj.title
   p1.innerText = obj.description
   p2.innerText = obj.description
