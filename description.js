@@ -49,58 +49,22 @@ const objects = [
   },
 ]
 
-function sleep (ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-
 window.onload = () => {
-  const button = document.getElementById('section-1-button')
-  const img = document.getElementById('section-1-img')
   const h1 = document.getElementById('section-1-h1')
-  const p = document.getElementById('section-1-p')
+  const p1 = document.getElementById('section-1-p-1')
+  const p2 = document.getElementById('section-1-p-2')
+  const img1 = document.getElementById('section-1-img-1')
+  const img2 = document.getElementById('section-1-img-2')
+  const img3 = document.getElementById('section-1-img-3')
 
-  const obj = objects[0]
+  const usp = new URLSearchParams(window.location.search)
+  const id = Number(usp.get('id'))
+  const obj = objects[id - 1]
 
-  img.src = obj.url
+  img1.src = obj.url
+  img2.src = obj.url
+  img3.src = obj.url
   h1.innerText = obj.title
-  p.innerText = obj.description
-  img.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-  button.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-
-  let currentIndex = 1
-
-  async function FadeSection1Image () {
-    currentIndex++
-
-    const button = document.getElementById('section-1-button')
-    const img = document.getElementById('section-1-img')
-    const h1 = document.getElementById('section-1-h1')
-    const p = document.getElementById('section-1-p')
-
-    img.classList.add('fade')
-    h1.classList.add('fade')
-    p.classList.add('fade')
-
-    const obj = objects[currentIndex - 1]
-    await sleep(2500)
-
-    img.src = obj.url
-    h1.innerText = obj.title
-    p.innerText = obj.description
-    img.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-    button.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-
-    if (currentIndex >= 6) {
-      currentIndex = 1
-    }
-
-    await sleep(2500)
-
-    img.classList.remove('fade')
-    h1.classList.remove('fade')
-    p.classList.remove('fade')
-  }
-
-  FadeSection1Image()
-  setInterval(FadeSection1Image, 10000)
+  p1.innerText = obj.description
+  p2.innerText = obj.description
 }
