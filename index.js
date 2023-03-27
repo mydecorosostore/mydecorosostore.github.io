@@ -64,8 +64,8 @@ window.onload = () => {
   img.src = obj.url
   h1.innerText = obj.title
   p.innerText = obj.description
-  img.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-  button.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
+  img.onclick = () => window.location.replace(`/description.html?id=${obj.id}`)
+  button.onclick = () => window.location.replace(`/description.html?id=${obj.id}`)
 
   let currentIndex = 1
 
@@ -87,8 +87,8 @@ window.onload = () => {
     img.src = obj.url
     h1.innerText = obj.title
     p.innerText = obj.description
-    img.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
-    button.onclick = () => window.location.replace(`/untitled11/description.html?id=${obj.id}`)
+    img.onclick = () => window.location.replace(`/description.html?id=${obj.id}`)
+    button.onclick = () => window.location.replace(`/description.html?id=${obj.id}`)
 
     if (currentIndex >= 6) {
       currentIndex = 1
