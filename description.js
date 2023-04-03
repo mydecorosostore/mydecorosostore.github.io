@@ -67,4 +67,30 @@ window.onload = () => {
   h1.innerText = obj.title
   p1.innerText = obj.description
   p2.innerText = obj.description
+
+  img1.addEventListener('click', OnImageClick)
+  img2.addEventListener('click', OnImageClick)
+  img3.addEventListener('click', OnImageClick)
+  document.body.addEventListener('click', OnBodyActiveClick)
+}
+
+function OnImageClick (e) {
+  document.body.classList.add('body-active')
+  const img = document.createElement('img')
+
+  img.src = e.currentTarget.src
+  img.classList.add('img-active')
+
+  document.body.appendChild(img)
+}
+
+function OnBodyActiveClick (e) {
+  if (e.currentTarget !== e.target) {
+    return
+  }
+  if (document.body.classList[0] === 'body-active') {
+    const imgs = document.getElementsByClassName('img-active')
+    document.body.removeChild(imgs[0])
+    document.body.classList.remove('body-active')
+  }
 }
